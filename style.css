@@ -1,0 +1,23 @@
+/* CSS Document */
+body{
+background-color:#000000
+}
+
+#contenedor {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#header {
+}
+#menu {
+  float: left;
+  width: 25%;
+}
+#content {
+  float: left;
+  width: 75%;
+}
+#footer {
+  clear: both;
+}
