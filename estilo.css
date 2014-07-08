@@ -1,129 +1,164 @@
-body {
-	background-color: #FFFFCC;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	line-height: 24px;
-	color: #336699;
+@charset "utf-8";
+/* CSS Document */
+html {
+	height: 100%;
 }
-
-td, th {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	line-height: 24px;
-	color: #333333;
+body, td, th {
+	font-family: actor;
+	font-style: normal;
+	font-weight: 400;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0%, rgba(216,216,216,1.00)), color-stop( 100%, rgba(255,255,255,1.00)));
+	background-image: -webkit-linear-gradient(270deg, rgba(216,216,216,1.00) 0%, rgba(255,255,255,1.00) 100%);
+	background-image: linear-gradient(180deg, rgba(216,216,216,1.00) 0%, rgba(255,255,255,1.00) 100%);
+	background-color: #F3F3F3;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	height: 100%;
 }
-
-a {
-	font-size: 12px;
-	color: #336600;
+#espacio {
+	min-height: 100%;
+	position: relative;
 }
-
-form {
-	background-color: #CCCC99;
+/*#espacio:after{
+	heigth:50px;
+}*/
+header {
+	margin: 0 auto 20px;
+	border: 1px solid #222;
+	background-color: #CCCCCC;
+	-webkit-box-shadow: 1px 1px 1px 1px #999999;
+	box-shadow: 1px 1px 1px 1px #999999;
+	width: 90%;
 }
-
-.title {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	line-height: 20px;
- background-color: #99CC00; color: #003333;}
-
-.subtitle {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	line-height: 30px;
- color: #003300;}
-
-.header {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 20px;
-	background-color: #669900;
- color: #FFFF33;
+nav {
+	display: block;
+	margin: 0 auto 20px;
+	border: 1px solid #222;
+	position: relative;
+	background-color: #CCCCCC;
+	-webkit-box-shadow: 1px 1px 1px 1px #999999;
+	box-shadow: 1px 1px 1px 1px #999999;
+	text-align: center;
+	width: 90%;
 }
-
-.nav {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	background-color: #CCFF99;
+nav ul {
+	margin: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 31px;
+	padding-top: 0;
+	background-color: #D6D6D6;
 }
-
-.navLink {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	background-color: #DEDECA;
+nav ul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
 }
-
-.sidebar {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	line-height: 14px;
-	padding: 3px;
-	background-color: #FFFFCC;
- color: #003333;
+nav li {
+	position: relative;
+	float: left;
+	list-style-type: none;
+	display: block;
+	padding: 10px 20px;
+	border-left: 1px solid #D2D2D2;
+	border-right: 1px solid #222;
+	color: #000;
+	text-decoration: none;
+	background-color: #D6D6D6;
 }
-
-.sidebarHeader {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	color: #003300;
-	background-color: #FFFF66;
+nav li:focus {
+	outline: none;
+	text-decoration: none;
 }
-
-.sidebarFooter {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	line-height: 18px;
-	background-color: #FFFF99;
- font-style: italic;
+nav li:first-child {
+	border-left: none;
 }
-
-.footer {
-  font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 22px;
-	color: #333333;
-	background-color: #CCFF99;
+ nav li:ultimo {
+ border-right: none;
 }
-
-.legal {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 9px;
-	color: #333333;
+nav a span {
+	display: block;
+	float: right;
+	margin-left: 5px;
 }
-
-.box1 {
-	border-width: thin;
-	border-color: #99FF99 #003300 #003300 #99FF99;
- border-style: double;
- }
-
-.promo {
-	font-family: "Times New Roman", Times, serif;
-	color: #000033;
+section {
+	width: 65%;
+	text-align: center;
+	float: left;
+	margin-left: 5%;
+	/*min-height: 1000px;*/
+	/*margin-right: auto;*/
 }
-
-.titlebar {
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
+aside{ 
+    width: 24%;
+    text-align: center;
+	float: right;
+	/*margin-left: auto;*/
+	margin-right: 5%;
+	/*vertical-align: top;*/
+}
+#contenido{
+	padding-bottom: 100px;
+	padding: 10px;
+}
+footer {
+	background-color: #000000;
+	position: absolute;
+	bottom: 0;
+	text-align: right;
 	color: #FFFFFF;
-	background-color: #336699;
-	text-align: CENTER;
+	width: 100%;
+	height: 80px;
 }
-
-.dingbat {
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: #FFFFFF;
- color: #660000; font-weight: bolder; font-size: medium;
- }
-
-input.big {
-	width: 100px;
+#pie {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-input.small {
-	width: 50px;
+/* tablas */
+table {
+	border-collapse: collapse;
+	text-align: center;
+	width: 100%;
 }
+p {
+	background: #fff;
+	overflow: hidden;
+	border: 1px solid #CFCFCF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+table td, table th {
+	padding: 3px 10px;
+}
+table tbody td {
+	color: #000000;
+	border-left: 1px solid #000000;
+}
+table tbody td {
+	background: #C8D3D9;
+	color: #000000;
+}
+table tbody td:first-child {
+	border-left: none;
+}
+table tbody tr:last-child td {
+	border-bottom: none;
+}
+table thead th {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7B7B8F), color-stop(1, #484854) );
+	background: -moz-linear-gradient( center top, #7B7B8F 5%, #484854 100% );
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7B7B8F', endColorstr='#484854');
+	background-color: #7B7B8F;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: bold;
+}
+table thead th:first-child {
+	border: none;
